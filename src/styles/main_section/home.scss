@@ -1,0 +1,50 @@
+#home {
+  padding: 210px 0;
+  background-image: url(/public/images/banner_image\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .content {
+    padding: 10px;
+
+    .title {
+      color: #d9d9d9;
+      font-family: $primary-font;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 2.8px;
+      width: 50%;
+    }
+
+    .text {
+      color: #d9d9d9;
+      font-family: $primary-font;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      padding: 12px 20px 12px 20px;
+      font-family: $primary-font;
+      color: #d9d9d9;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.8px;
+      background: $five-quarter-color;
+      border-radius: 5px;
+      border: 0;
+
+
+      &:hover {
+        background: $secondary-color;
+      }
+    }
+  }
+}
