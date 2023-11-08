@@ -6,3 +6,9 @@ document.body.onload = () => {
         }
     }, 1000)
 }
+
+// import './games.json'
+const CardRef = document.querySelector(".js-card");
+// const markup = CardRef(Card);
+console.log(CardRef);
+// CardRef.insertAdjacentHTML("beforeend", markup);

@@ -6,7 +6,11 @@
         "brand": "Crystal Dynamics",
         "genre": "Action adventure, Platformer, Shooter, RPG, Survival horror, Adventure",
         "likes": 241,
-        "release": "15.11.2015"
+        "release": "15.11.2015",
+        "Os": [
+            "Windows",
+            "macOS"
+        ]
     },
     {
         "id": 2,
@@ -15,7 +19,11 @@
         "brand": "Rockstar Games",
         "genre": "Action Adventure, Third Person Shooter, Linear",
         "likes": 420,
-        "release": "18.11.2014"
+        "release": "18.11.2014",
+        "Os": [
+            "Windows",
+            "macOS"
+        ]
     },
     {
         "id": 3,
@@ -24,7 +32,11 @@
         "brand": "CD Projekt",
         "genre": "Action RPG, Fighting, Linearity, Action adventure",
         "likes": 350,
-        "release": "18.05.2015"
+        "release": "18.05.2015",
+        "Os": [
+            "Windows",
+            "macOS"
+        ]
     },
     {
         "id": 4,
@@ -33,7 +45,11 @@
         "brand": "Striking Distance Studios",
         "genre": "Survival horror, Shooter, Fighting, Adventure video game",
         "likes": 250,
-        "release": "01.12.2022"
+        "release": "01.12.2022",
+        "Os": [
+            "Windows",
+            "macOS"
+        ]
     },
     {
         "id": 5,
@@ -42,7 +58,11 @@
         "brand": "Santa Monica Studio",
         "genre": "Adventure game, hack and slash",
         "likes": 550,
-        "release": "09.11.2022"
+        "release": "09.11.2022",
+        "Os": [
+            "Windows",
+            "macOS"
+        ]
     },
     {
         "id": 6,
@@ -51,6 +71,10 @@
         "brand": "Gearbox Software",
         "genre": "Action role-playing, first-person shooter",
         "likes": 150,
-        "release": "13.09.2019"
+        "release": "13.09.2019",
+        "Os": [
+            "Windows",
+            "macOS"
+        ]
     }
 ]

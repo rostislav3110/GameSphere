@@ -40,6 +40,11 @@ module.exports = (env, argv) => {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'asset/resource',
         },
+        {
+          test: /\.json$/,
+          loader: 'json-loader',
+          type: 'javascript/auto',
+        },
       ],
     },
     plugins: [

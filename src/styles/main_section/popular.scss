@@ -1,0 +1,142 @@
+#popular {
+  background-color: $seven-quarter-color;
+  padding: 80px 0;
+
+  .title {
+    color: #fff;
+    font-family: $primary-font;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+
+    span {
+      color: $tertiary-color;
+    }
+  }
+
+  .liner {
+    width: 165px;
+    height: 10px;
+    border-radius: 50px;
+    background: $five-quarter-color;
+    margin: 15px auto 0 auto;
+  }
+
+  .card {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .card-item {
+      .image {
+        position: relative;
+        height: 182px;
+
+        img {
+          position: relative;
+          object-fit: cover;
+        }
+
+        .likes {
+          position: absolute;
+          display: flex;
+          justify-content: space-evenly;
+          width: 60px;
+          height: 16px;
+          border-radius: 50px;
+          background: #fff;
+          left: 25px;
+          bottom: 20px;
+
+          p {
+            color: #000;
+            font-family: $primary-font;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+      }
+
+      .content {
+        background: $eight-quarter-color;
+        padding: 20px;
+
+        .title {
+          color: #fff;
+          font-family: $primary-font;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 10px;
+        }
+
+        .subtitle {
+          color: #fff;
+          font-family: $primary-font;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 10px;
+        }
+
+        .date {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          margin-top: 12px;
+
+          .updates {
+            .release {
+              color: #fff;
+              font-family: $primary-font;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              margin-bottom: 6px;
+            }
+
+            .updated {
+              color: #fff;
+              font-family: $primary-font;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+        }
+
+        .btn {
+          width: 83.44px;
+          height: 24.806px;
+          border-radius: 5px;
+          background: $secondary-color;
+          align-self: flex-end;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .date-btn {
+            text-transform: uppercase;
+            color: #fff;
+            font-family: $primary-font;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
