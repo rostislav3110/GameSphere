@@ -49,8 +49,8 @@ module.exports = (env, argv) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: path.join(__dirname, 'src', 'pages', 'index.hbs'),
-        filename: 'index.html',
+        template: path.join(__dirname, 'src', 'pages', 'main.hbs'),
+        filename: 'main.html',
       }),
       new CopyWebpackPlugin({
         patterns: [
