@@ -4,7 +4,7 @@
         "name": "Tomb Raider",
         "img": "./public/images/action-3.png",
         "brand": "Crystal Dynamics",
-        "genre": "Action adventure, Platformer, Shooter, RPG, Survival horror, Adventure",
+        "genre": ["Action adventure", "Platformer", "Shooter"],
         "likes": 241,
         "release": "15.11.2015",
         "Os": [
@@ -17,7 +17,7 @@
         "name": "Grand Theft Auto V",
         "img": "./public/images/action-1.png",
         "brand": "Rockstar Games",
-        "genre": "Action Adventure, Third Person Shooter, Linear",
+        "genre": ["Adventure", "Third Person Shooter", "Linear"],
         "likes": 420,
         "release": "18.11.2014",
         "Os": [
@@ -30,7 +30,7 @@
         "name": "Witcher 3",
         "img": "./public/images/action-2.png",
         "brand": "CD Projekt",
-        "genre": "Action RPG, Fighting, Linearity, Action adventure",
+        "genre": ["Action RPG", "Fighting", "Linearity"],
         "likes": 350,
         "release": "18.05.2015",
         "Os": [
@@ -43,12 +43,12 @@
         "name": "The Callisto Protocol",
         "img": "./public/images/action-4.png",
         "brand": "Striking Distance Studios",
-        "genre": "Survival horror, Shooter, Fighting, Adventure video game",
+        "genre": ["Survival horror", "Shooter", "Fighting"],
         "likes": 250,
         "release": "01.12.2022",
         "Os": [
             "Windows",
-            "macOS"
+            "Ps5"
         ]
     },
     {
@@ -56,12 +56,12 @@
         "name": "God of War: Ragnarok",
         "img": "./public/images/action-5.png",
         "brand": "Santa Monica Studio",
-        "genre": "Adventure game, hack and slash",
+        "genre": ["Adventure game", "hack and slash"],
         "likes": 550,
         "release": "09.11.2022",
         "Os": [
-            "Windows",
-            "macOS"
+            "Ps5",
+            "Ps4"
         ]
     },
     {
@@ -69,7 +69,7 @@
         "name": "Borderlands 3",
         "img": "./public/images/action-6.png",
         "brand": "Gearbox Software",
-        "genre": "Action role-playing, first-person shooter",
+        "genre": ["Action role-playing", "shooter"],
         "likes": 150,
         "release": "13.09.2019",
         "Os": [

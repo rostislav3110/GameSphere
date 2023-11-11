@@ -3,23 +3,23 @@
     <p class="title">Top Popular <span>Games</span></p>
     <div class="liner"></div>
     <div class="card js-card">
-      {{#each this}}
+      {{#each games}}
         <div class="card-item">
           <div class="image">
-            <img src="./public/images/action-1 1.png" alt="demo" />
+            <img src="{{img}}" alt="demo" />
             <div class="likes">
-              <p>{{likes}}</p>
-              <img src="./public/images/Stars.png" alt="demo" />
+              <p> {{likes}}</p>
+              <img class="star" src="./public/images/Stars.png" alt="demo" />
             </div>
           </div>
           <div class="content">
-            <p class="title">{{name}}</p>
-            <p class="subtitle">{{genre}}</p>
+            <p class="title"> {{name}}</p>
+            <p class="subtitle"> {{genre}}</p>
             <img src="./public/images/Stars-rating.png" alt="demo" />
             <div class="date">
               <div class="updates">
-                <p class="release">Release Date:{{release}}</p>
-                <p class="updated">OS:{{Os}}</p>
+                <p class="release">Release Date: {{release}}</p>
+                <p class="updated">OS: {{Os}}</p>
               </div>
               <div class="btn">
                 <a href="#" class="date-btn">See more</a>
@@ -28,6 +28,9 @@
           </div>
         </div>
       {{/each}}
+    </div>
+    <div class="popular-btn">
+      <a href="#">See more Games</a>
     </div>
   </div>
 </section>

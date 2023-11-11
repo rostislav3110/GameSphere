@@ -1,0 +1,54 @@
+#Join {
+  padding: 210px 0;
+  background-image: url(/public/images/join_image\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .content {
+    text-align: center;
+
+    .title {
+      color: #fff;
+      font-family: $primary-font;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+
+      span {
+        color: $five-quarter-color;
+      }
+    }
+
+    .text {
+      color: #fff;
+      text-align: center;
+      font-family: $primary-font;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 50px;
+    }
+
+    .join_btn {
+      a {
+        padding: 10px 20px;
+        background: $five-quarter-color;
+        color: #fff;
+        font-family: $primary-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration: none;
+
+        &:hover {
+            background: $secondary-color;
+        }
+      }
+    }
+  }
+}
