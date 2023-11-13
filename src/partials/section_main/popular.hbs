@@ -14,7 +14,9 @@
           </div>
           <div class="content">
             <p class="title"> {{name}}</p>
-            <p class="subtitle"> {{genre}}</p>
+            {{#genre}}
+            <p class="subtitle"> {{.}}</p>
+            {{/genre}}
             <img src="./public/images/Stars-rating.png" alt="demo" />
             <div class="date">
               <div class="updates">

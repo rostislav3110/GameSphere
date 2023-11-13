@@ -43,7 +43,7 @@
         "name": "The Callisto Protocol",
         "img": "./public/images/action-4.png",
         "brand": "Striking Distance Studios",
-        "genre": ["Survival horror", "Shooter", "Fighting"],
+        "genre": ["Survival horror", "Shooter"],
         "likes": 250,
         "release": "01.12.2022",
         "Os": [

@@ -11,7 +11,5 @@ const render = (template, data, targetElement) => {
   targetElement.innerHTML = renderedHTML;
 };
 
-console.log(data)
-
 const targetElement = document.getElementById('app');
 render(template, data, targetElement);
