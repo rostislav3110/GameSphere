@@ -1,0 +1,128 @@
+#coming {
+  padding: 50px 0;
+  background-color: $primary-color;
+
+  .content {
+    h3 {
+      font-family: $tertiary-font;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+      color: #fff;
+      margin-bottom: 25px;
+      span {
+        color: $tertiary-color;
+      }
+    }
+
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .card-flex-primary {
+        .card-item {
+          width: 600px;
+          margin: 10px;
+
+          img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            position: relative;
+            border-radius: 10px;
+          }
+
+          .card-content {
+            padding: 10px;
+            position: absolute;
+            margin: -200px 0 0 40px;
+
+            .title {
+              font-size: 28px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 140%;
+              font-family: $tertiary-font;
+              color: #fff;
+              width: 70%;
+              margin-bottom: 30px;
+            }
+
+            .btn {
+              display: inline-block;
+              padding: 9px 16px;
+              border: 1px solid #f5f4f9;
+              background: transparent;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 144%;
+              font-family: $tertiary-font;
+              border-radius: 10px;
+              text-decoration: none;
+              color: #f5f4f9;
+
+              &:hover {
+                background: #f5f4f9;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+      .card-flex-secondary {
+        .card-item {
+          width: 450px;
+          margin: 10px;
+
+          img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            position: relative;
+            border-radius: 10px;
+          }
+
+          .card-content {
+            padding: 10px;
+            position: absolute;
+            margin: -180px 0 0 20px;
+
+            .title {
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 140%;
+              font-family: $tertiary-font;
+              color: #fff;
+              width: 70%;
+              margin-bottom: 25px;
+            }
+
+            .btn {
+              display: inline-block;
+              padding: 9px 16px;
+              border: 1px solid #f5f4f9;
+              background: transparent;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 144%;
+              font-family: $tertiary-font;
+              border-radius: 10px;
+              text-decoration: none;
+              color: #f5f4f9;
+
+              &:hover {
+                background: #f5f4f9;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
