@@ -28,9 +28,8 @@
 
   .card {
     margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 40px;
 
     .card-item {
@@ -39,8 +38,9 @@
         height: 182px;
 
         img {
-          position: relative;
           object-fit: cover;
+          max-height: 182px;
+          width: 100%;
         }
 
         .likes {

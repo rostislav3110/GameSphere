@@ -49,12 +49,16 @@ module.exports = (env, argv) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: path.join(__dirname, 'src', 'pages', 'main.hbs'),
-        filename: 'main.html',
+        template: './src/index.html',
+        filename: 'index.html',
+      }),
+      new HtmlWebpackPlugin({
+        template: './src/index.html',
+        filename: 'guide.html',
       }),
       new CopyWebpackPlugin({
         patterns: [
-          { from: 'public', to: 'public' }
+          { from: 'public', to: '' }
         ]
       }),
       new MiniCssExtractPlugin(),
@@ -65,6 +69,9 @@ module.exports = (env, argv) => {
       },
       hot: true,
       port: 8000,
+      historyApiFallback: {
+        index: 'index.html',
+      },
     },
   };
 };
