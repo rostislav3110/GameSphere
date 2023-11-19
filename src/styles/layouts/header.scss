@@ -47,25 +47,68 @@
           }
         }
       }
+    }
 
-      .btn-nav {
-        font-family: $primary-font;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        font-size: 16px;
-        color: #fff;
-        padding: 5px 6px 5px 6px;
-        background-color: $secondary-color;
-        border: 0;
-        border-radius: 5px;
-        text-decoration: none;
+    .fas {
+      display: none;
+      color: #fff;
+    }
+  }
+}
 
-        &:hover {
-          background-color: $five-quarter-color;
-          transition: ease 0.3s;
+@media (max-width: 992px) {
+  .navbar {
+    ul {
+      li {
+        margin: 10px 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    ul {
+      background: #9ac3dd;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100%;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.5s;
+
+      li {
+        display: block;
+        margin: 20px;
+        text-align: center;
+
+        a {
+          color: #000;
+
+          &:hover {
+            color: #234edb;
+          }
+
+          &::after {
+            background: #234edb;
+          }
         }
       }
+
+      .fas {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+      }
+    }
+
+    .fas {
+      display: block;
+      font-size: 25px;
+      cursor: pointer;
     }
   }
 }

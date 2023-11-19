@@ -1,0 +1,134 @@
+footer {
+  padding: 50px 0 0 0;
+  background: $primary-color;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+
+    .menu {
+      p {
+        font-family: $secondary-font;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        color: #fff;
+        margin-bottom: 24px;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          padding: 0 0px 16px 0px;
+
+          a {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            font-family: $secondary-font;
+            color: #a0a0a0;
+            text-decoration: none;
+
+            &:hover {
+              color: $five-quarter-color;
+            }
+          }
+        }
+      }
+    }
+
+    .resources {
+      p {
+        font-family: $secondary-font;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        color: #fff;
+        margin-bottom: 24px;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          padding: 0 0px 16px 0px;
+
+          a {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            font-family: $secondary-font;
+            color: #a0a0a0;
+            text-decoration: none;
+
+            &:hover {
+              color: $five-quarter-color;
+            }
+          }
+        }
+      }
+    }
+
+    .follow {
+      p {
+        font-family: $secondary-font;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        color: #fff;
+        margin-bottom: 24px;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          padding: 0px 12px 0px 0px;
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            width: 36px;
+            height: 36px;
+            font-size: 20px;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #a0a0a0;
+
+            &:hover {
+              color: $five-quarter-color;
+              background: rgba(255, 255, 255, 0.2);
+            }
+          }
+        }
+      }
+    }
+  }
+  .line {
+    border: 1px solid rgba(255, 255, 255, 0.04);
+  }
+  .copyright {
+    padding: 22px 0;
+
+    p {
+      font-family: $primary-font;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 144%;
+      color: #A0A0A0;
+      text-align: center;
+    }
+  }
+}

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Tomb Raider",
-        "img": "./public/images/action-3.png",
+        "img": "./images/action-3.png",
         "brand": "Crystal Dynamics",
         "genre": ["Action adventure", "Platformer", "Shooter"],
         "likes": 241,
@@ -15,7 +15,7 @@
     {
         "id": 2,
         "name": "Grand Theft Auto V",
-        "img": "./public/images/action-1.png",
+        "img": "./images/action-1.png",
         "brand": "Rockstar Games",
         "genre": ["Adventure", "Third Person Shooter", "Linear"],
         "likes": 420,
@@ -28,7 +28,7 @@
     {
         "id": 3,
         "name": "Witcher 3",
-        "img": "./public/images/action-2.png",
+        "img": "./images/action-2.png",
         "brand": "CD Projekt",
         "genre": ["Action RPG", "Fighting", "Linearity"],
         "likes": 350,
@@ -41,7 +41,7 @@
     {
         "id": 4,
         "name": "The Callisto Protocol",
-        "img": "./public/images/action-4.png",
+        "img": "./images/action-4.png",
         "brand": "Striking Distance Studios",
         "genre": ["Survival horror", "Shooter"],
         "likes": 250,
@@ -54,7 +54,7 @@
     {
         "id": 5,
         "name": "God of War: Ragnarok",
-        "img": "./public/images/action-5.png",
+        "img": "./images/action-5.png",
         "brand": "Santa Monica Studio",
         "genre": ["Adventure game", "hack and slash"],
         "likes": 550,
@@ -67,7 +67,7 @@
     {
         "id": 6,
         "name": "Borderlands 3",
-        "img": "./public/images/action-6.png",
+        "img": "./images/action-6.png",
         "brand": "Gearbox Software",
         "genre": ["Action role-playing", "shooter"],
         "likes": 150,
