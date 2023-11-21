@@ -24,6 +24,7 @@
       form {
         display: flex;
         flex-direction: column;
+        padding: 10px;
 
         input {
           width: 388px;
@@ -75,3 +76,29 @@
     }
   }
 }
+
+@media (max-width: 990px) {
+  #contact {
+    .content {
+      flex-direction: column;
+
+      img {
+        object-fit: cover;
+        width: 70%;
+        align-self: center;
+      }
+      .block-form {
+        margin-top: 20px;
+        form {
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+

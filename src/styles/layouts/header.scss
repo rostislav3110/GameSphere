@@ -1,114 +1,49 @@
 #header {
-  background: $primary-color;
-  .navbar {
-    .nav__content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 23px 10px 23px 10px;
-
-      .navbar-nav {
-        list-style: none;
-        display: flex;
-
-        .nav-item {
-          .nav-link {
-            padding-right: 55px;
-            color: #fff;
-            text-align: center;
-            font-family: $primary-font;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            font-size: 16px;
-            text-decoration: none;
-            position: relative;
-
-            &:hover {
-              color: $five-quarter-color;
-            }
-
-            &::after {
-              content: "";
-              width: 0;
-              height: 2px;
-              background: $five-quarter-color;
-              position: absolute;
-              left: 0;
-              bottom: -6px;
-              transition: 0.5s;
-            }
-
-            &:hover {
-              &::after {
-                width: 50%;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .fas {
-      display: none;
-      color: #fff;
-    }
+  .navbar-toggler {
+    background-color: #fff;
   }
-}
-
-@media (max-width: 992px) {
   .navbar {
-    ul {
-      li {
-        margin: 10px 15px;
-      }
+    background: $primary-color;
+    padding: 20px 0;
+    .navbar-collapse {
+      justify-content: space-around;
     }
-  }
-}
 
-@media (max-width: 768px) {
-  nav {
-    ul {
-      background: #9ac3dd;
-      position: fixed;
-      top: 0;
-      right: -200px;
-      width: 200px;
-      height: 100%;
-      padding-top: 50px;
-      z-index: 2;
-      transition: right 0.5s;
-
-      li {
-        display: block;
-        margin: 20px;
-        text-align: center;
-
-        a {
-          color: #000;
+    .navbar-nav {
+      .nav-item {
+        position: relative;
+        .nav-link {
+          padding-right: 45px;
+          color: #fff;
+          text-align: center;
+          font-family: $primary-font;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          font-size: 16px;
 
           &:hover {
-            color: #234edb;
+            color: $five-quarter-color;
           }
 
           &::after {
-            background: #234edb;
+            content: "";
+            width: 0;
+            height: 2px;
+            background: $five-quarter-color;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+          }
+
+          &:hover {
+            &::after {
+              width: 60%;
+            }
           }
         }
       }
-
-      .fas {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        cursor: pointer;
-      }
-    }
-
-    .fas {
-      display: block;
-      font-size: 25px;
-      cursor: pointer;
     }
   }
 }

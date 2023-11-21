@@ -2,11 +2,11 @@
   <div class="container">
     <p class="title">Top Popular <span>Games</span></p>
     <div class="liner"></div>
-    <div class="card js-card">
+    <div class="card-p">
       {{#each games}}
-        <div class="card-item">
+        <div class="card-item-p">
           <div class="image">
-            <img src="{{img}}" alt="demo" />
+            <img class="img-p" src="{{img}}" alt="demo" />
             <div class="likes">
               <p> {{likes}}</p>
               <img class="star" src="./images/Stars.png" alt="demo" />
@@ -23,7 +23,7 @@
                 <p class="release">Release Date: {{release}}</p>
                 <p class="updated">OS: {{Os}}</p>
               </div>
-              <div class="btn">
+              <div class="btn-p">
                 <a href="#" class="date-btn">See more</a>
               </div>
             </div>
@@ -32,7 +32,7 @@
       {{/each}}
     </div>
     <div class="popular-btn">
-      <a href="#">See more Games</a>
+      <a href="index.html">See more Games</a>
     </div>
   </div>
 </section>

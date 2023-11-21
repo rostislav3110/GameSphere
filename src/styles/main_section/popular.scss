@@ -26,18 +26,18 @@
     margin: 15px auto 0 auto;
   }
 
-  .card {
+  .card-p {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 40px;
 
-    .card-item {
+    .card-item-p {
       .image {
         position: relative;
         height: 182px;
 
-        img {
+        .img-p {
           object-fit: cover;
           max-height: 182px;
           width: 100%;
@@ -62,6 +62,12 @@
             font-weight: 600;
             line-height: normal;
           }
+
+          .star {
+            width: 30%;
+            object-fit: cover;
+          }
+
         }
       }
 
@@ -117,7 +123,7 @@
           }
         }
 
-        .btn {
+        .btn-p {
           width: 83.44px;
           height: 24.806px;
           border-radius: 5px;

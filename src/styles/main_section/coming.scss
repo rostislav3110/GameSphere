@@ -16,33 +16,36 @@
       }
     }
 
-    .card {
+    .card-c {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
 
       .card-flex-primary {
-        .card-item {
+        display: flex;
+        justify-content: space-between;
+        .card-item-p {
           width: 600px;
           margin: 10px;
+          background-image: url(/public/images/cod_far.png);
+          background-repeat: no-repeat;
+          background-size: cover;
 
           img {
             width: 100%;
-            height: 400px;
             object-fit: cover;
             position: relative;
             border-radius: 10px;
           }
 
           .card-content {
-
+            padding: 85px 30px 80px 30px;
             .title {
               font-size: 28px;
               font-style: normal;
               font-weight: 500;
               line-height: 140%;
               font-family: $tertiary-font;
-              color: #fff;
+              color: #c3b5b5f7;
               width: 70%;
               margin-bottom: 30px;
             }
@@ -68,29 +71,37 @@
             }
           }
         }
+
+        .it-p {
+          background-image: url(/public/images/nba.png);
+        }
       }
       .card-flex-secondary {
-        .card-item {
+        display: flex;
+        .card-item-s {
           width: 450px;
           margin: 10px;
+          background-image: url(/public/images/fifa.png);
+          border-radius: 10px;
+          background-repeat: no-repeat;
+          background-size: cover;
 
           img {
             width: 100%;
-            height: 260px;
             object-fit: cover;
             position: relative;
             border-radius: 10px;
           }
 
           .card-content {
-
+            padding: 34px 30px 50px 30px;
             .title {
               font-size: 24px;
               font-style: normal;
               font-weight: 500;
               line-height: 140%;
               font-family: $tertiary-font;
-              color: #fff;
+              color: #c3b5b5f7;
               width: 70%;
               margin-bottom: 25px;
             }
@@ -115,6 +126,34 @@
               }
             }
           }
+        }
+
+        .it-s-one {
+          background-image: url(/public/images/resedent_evel.png);
+        }
+
+        .it-s-two {
+          background-image: url(/public/images/alien.png);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #coming {
+    .content {
+      h3 {
+        font-size: 28px;
+      }
+
+      .card-flex-primary,
+      .card-flex-secondary {
+        flex-direction: column;
+
+        .card-item-p,
+        .card-item-s {
+          width: inherit !important;
         }
       }
     }
