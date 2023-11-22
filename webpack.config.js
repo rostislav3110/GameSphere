@@ -56,6 +56,14 @@ module.exports = (env, argv) => {
         template: './src/index.html',
         filename: 'guide.html',
       }),
+      new HtmlWebpackPlugin({
+        template: './src/index.html',
+        filename: 'posts.html',
+      }),
+      new HtmlWebpackPlugin({
+        template: './src/index.html',
+        filename: 'store.html',
+      }),
       new CopyWebpackPlugin({
         patterns: [
           { from: 'public', to: '' }

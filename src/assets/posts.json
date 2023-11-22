@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "image":"./images/cyberpunk.png",
+        "title": "Cyberpunk 2077 Phantom Liberty Promotion Starts in June as CD",
+        "time": "March 31, 2023",
+        "author": "Joseph Allen",
+        "like": 43,
+        "coment": 46,
+        "text": "The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ..."
+    },
+    {
+        "id": 2,
+        "image":"./images/gta-online.jpg",
+        "title": "GTA V Doomsday Scenario Community Challenge",
+        "time": "November 16, 2023",
+        "author": "Joseph Allen",
+        "like": 125,
+        "coment": 76,
+        "text": "The stakes of our community-wide challenge series continue to climb to new, dizzying heights. In addition to the fast twitch-enhancing effects of the ongoing Sprunk..."
+    },
+    {
+        "id": 3,
+        "image":"./images/payday.jpg",
+        "title": "The developers of Payday 3 have revealed new details of the game.",
+        "time": "August 3, 2023",
+        "author": "Joseph Allen",
+        "like": 45,
+        "coment": 25,
+        "text": "There will be eight heists in Payday 3 at launch. The game designers tried to make each of them unique and memorable..."
+    },
+    {
+        "id": 4,
+        "image":"./images/tekken.png",
+        "title": "Bandai Namco has published a new trailer for Tekken 8",
+        "time": "November 11, 2023",
+        "author": "Joseph Allen",
+        "like": 45,
+        "coment": 25,
+        "text": "Earlier this month we wrote about the trailer for the character Reina in Tekken 8, and today Bandai Namco published a new trailer..."
+    },
+    {
+        "id": 5,
+        "image":"./images/evil-within.jpg",
+        "title": "The Evil Within 2 has appeared in the Epic Games Store catalog",
+        "time": "August 3, 2023",
+        "author": "Joseph Allen",
+        "like": 55,
+        "coment": 65,
+        "text": "Now in the EGS store you can purchase the famous horror game The Evil Within 2 from the Japanese studio Tango Gameworks, the development..."
+    },
+    {
+        "id": 6,
+        "image":"./images/batefield.jpg",
+        "title": "Battlefield will be a reimagining of the popular shooter series",
+        "time": "August 2, 2023",
+        "author": "Joseph Allen",
+        "like": 75,
+        "coment": 125,
+        "text": "As part of the financial report and subsequent call with investors, Electronic Arts CEO Andrew Wilson focused on the future of the Battlefield franchise."
+    }
+]

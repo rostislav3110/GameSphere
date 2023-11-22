@@ -1,0 +1,40 @@
+<section id="post">
+  <div class="container">
+    <p class="title">Latest <span>Posts</span></p>
+    <div class="liner"></div>
+    <div class="card-p">
+      {{#each postPublic}}
+        <div class="card-item-p">
+          <div class="image">
+            <img class="img-p" src="{{image}}" alt="demo" />
+          </div>
+          <div class="content">
+            <p class="title">{{title}}</p>
+            <div class="subtitle">
+              <p class="date">{{time}}</p>
+              <p class="author">By: <span>{{author}}</span></p>
+            </div>
+            <div class="text">
+              <p>
+                {{text}}
+              </p>
+            </div>
+            <div class="likes">
+              <a href="#" class="btn-p">Read More</a>
+              <div class="block">
+                <div class="like">
+                  <i class="fa-regular fa-heart"></i>
+                  <p>{{like}}</p>
+                </div>
+                <div class="coment">
+                  <i class="fa-regular fa-comment-dots"></i>
+                  <p>{{coment}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

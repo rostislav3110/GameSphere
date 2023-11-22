@@ -1,0 +1,28 @@
+#store {
+  background-color: $six-quarter-color;
+  padding: 50px 0;
+
+  .title {
+    color: #fff;
+    font-family: $primary-font;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+
+    span {
+      color: $tertiary-color;
+    }
+  }
+
+  .liner {
+    width: 165px;
+    height: 10px;
+    border-radius: 50px;
+    background: $five-quarter-color;
+    margin: 15px auto 0 auto;
+  }
+}
