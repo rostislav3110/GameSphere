@@ -2,6 +2,10 @@
   background-color: $six-quarter-color;
   padding: 50px 0;
 
+  p {
+    margin-bottom: 0;
+  }
+
   .title {
     color: #fff;
     font-family: $primary-font;
@@ -24,5 +28,229 @@
     border-radius: 50px;
     background: $five-quarter-color;
     margin: 15px auto 0 auto;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+
+    .store-list {
+      list-style: none;
+      padding-right: 20px;
+
+      .list-item {
+        padding: 10px 0;
+        position: relative;
+
+        .list-link {
+          text-decoration: none;
+          color: #fff;
+          font-family: $primary-font;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+          &:hover {
+            color: $five-quarter-color;
+          }
+
+          &::after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background: $secondary-color;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+          }
+
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .game_list {
+      display: flex;
+      grid-gap: 20px;
+      flex-wrap: wrap;
+
+      .game-item {
+        position: relative;
+        overflow: hidden;
+
+        img {
+          object-fit: cover;
+          display: block;
+          transition: transform 0.5s;
+          width: 330px;
+          height: 348px;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        .layer {
+          width: 100%;
+          height: 0%;
+          background: linear-gradient(rgba(0, 0, 0, 0.6), gray);
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0 20px;
+          font-size: 14px;
+          transition: height 0.5s ease-in-out 0.3s;
+
+
+          h3 {
+            color: #fff;
+            font-family: $primary-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 10px;
+          }
+
+          .text {
+            color: #fff;
+            font-family: $primary-font;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 30px;
+          }
+        }
+
+
+        .block,
+        .sale {
+          display: flex;
+
+          &.block {
+            justify-content: space-between;
+            align-items: center;
+
+            .realize_date {
+              color: #fff;
+              font-family: $primary-font;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+
+          &.sale {
+            align-items: center;
+
+            p {
+              color: #fff;
+              font-family: $primary-font;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              padding-right: 10px;
+            }
+
+            .btn-sale {
+              padding: 4px 23px;
+              border: 1px solid $five-quarter-color;
+              color: #fff;
+              font-family: $primary-font;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-decoration: none;
+
+              &:hover {
+                background-color: $five-quarter-color;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+
+      .game-item:hover .layer {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  #store {
+    .content {
+      display: block;
+
+      .store-list {
+        text-align: center;
+        padding-right: 0;
+      }
+
+      .game_list {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #store {
+    .content {
+      display: block;
+
+      .game_list {
+        justify-content: center;
+        .game-item {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 565px) {
+  #store {
+    .content {
+      display: block;
+
+      .game_list {
+        justify-content: center;
+        .game-item {
+          
+          .layer {
+
+            h3 {
+              font-size: 15px;
+            }
+
+            .text {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
   }
 }
