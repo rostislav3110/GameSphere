@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "img": "./images/God_of_war.webp",
+        "title": "God of War: Ragnarok",
+        "text": "God of War Ragnarök is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment. It was released worldwide...",
+        "date": "10.12.2022",
+        "money": 2500
+    },
+    {
+        "id": 2,
+        "img": "./images/evil-within-2.webp",
+        "title": "The Evil Within 2",
+        "text": "The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system,new story content, and lots more, is scheduled to arrive ...",
+        "date": "5.10.2023",
+        "money": 1500
+    },
+    {
+        "id": 3,
+        "img": "./images/it_takes.webp",
+        "title": "It Takes Two",
+        "text": "The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system,new story content, and lots more, is scheduled to arrive ...",
+        "date": "11.8.2021",
+        "money": 700
+    },
+    {
+        "id": 4,
+        "img": "./images/spider-man.jpeg",
+        "title": "Spider Man 2",
+        "text": "The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system,new story content, and lots more, is scheduled to arrive ...",
+        "date": "9.2.2023",
+        "money": 1000
+    },
+    {
+        "id": 5,
+        "img": "./images/last-of-us.webp",
+        "title": "The Last Of Us part 2",
+        "text": "The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system,new story content, and lots more, is scheduled to arrive ...",
+        "date": "21.8.2022",
+        "money": 1200
+    },
+    {
+        "id": 6,
+        "img": "./images/days-gone.webp",
+        "title": "Days Gone",
+        "text": "The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system,new story content, and lots more, is scheduled to arrive ...",
+        "date": "13.5.2020",
+        "money": 600
+    }
+]
