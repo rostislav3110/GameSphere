@@ -1,0 +1,25 @@
+<div class="card-item-p">
+    <div class="image">
+    <img class="img-p" src="{{img}}" alt="demo" />
+    <div class="likes">
+        <p> {{likes}}</p>
+        <img class="star" src="./images/Stars.png" alt="demo" />
+    </div>
+    </div>
+    <div class="content">
+    <p class="title"> {{name}}</p>
+    {{#genre}}
+    <p class="subtitle"> {{.}}</p>
+    {{/genre}}
+    <img src="./images/Stars-rating.png" alt="demo" />
+    <div class="date">
+        <div class="updates">
+        <p class="release">Release Date: {{release}}</p>
+        <p class="updated">OS: {{Os}}</p>
+        </div>
+        <div class="btn-p">
+        <a href="#" class="date-btn">See more</a>
+        </div>
+    </div>
+    </div>
+</div>
