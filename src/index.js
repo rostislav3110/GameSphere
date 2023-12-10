@@ -1,6 +1,7 @@
 import './styles/main.scss';
 
-import games from './assets/games.json';
+import './js/games';
+
 import video_guide from './assets/video-guide.json';
 import postPublic from './assets/posts.json';
 import storeGame from './assets/store_game.json';
@@ -17,7 +18,7 @@ const templates = {
   '/store': storeTemplate
 };
 
-const pageData = { games, video_guide, postPublic, storeGame };
+const pageData = { video_guide, postPublic, storeGame };
 const targetElement = document.getElementById('app');
 
 const render = (template, data, targetElement) => {
