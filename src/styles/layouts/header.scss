@@ -45,5 +45,45 @@
         }
       }
     }
+
+    .auth {
+      display: flex;
+      button {
+        margin-right: 44px;
+        text-decoration: none;
+        color: $secondary-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border: 1px solid $secondary-color;
+        cursor: pointer;
+        padding: 7px 15px;
+        border-radius: 8px;
+        background: none;
+
+        &:hover {
+          background-color: $secondary-color;
+          color: #fff;
+        }
+      }
+      
+      img {
+        width: 40px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #header {
+    .navbar-nav {
+      margin-bottom: 40px;
+    }
+
+    .auth {
+      justify-content: center;
+    }
   }
 }
