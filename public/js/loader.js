@@ -1,6 +1,7 @@
-setTimeout(() =>{
-    let preloader = document.getElementById('page-preloader');
-    if(preloader && !preloader.classList.contains('done') ) {
-        preloader.classList.add('done')
-    }
-}, 1000)
+setTimeout(() => {
+  const body = document.getElementsByTagName("body")?.[0];
+
+  if (body && !body.classList.contains("hide-loader")) {
+    body.classList.add("hide-loader");
+  }
+}, 1000);

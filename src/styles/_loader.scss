@@ -1,3 +1,14 @@
+body {
+  &.hide-loader {
+
+    .loader__wrap {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+
 .loader__wrap {
   position: fixed;
   left: 0;
@@ -10,11 +21,6 @@
   opacity: 1;
   visibility: visible;
   transition: all 0.7s;
-
-  &.done {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 .loader {

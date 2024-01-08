@@ -4,29 +4,12 @@
     <div class="liner"></div>
     <div class="content">
       <ul class="store-list">
-        <li class="list-item"><a href="store.html" class="list-link">Action</a></li>
-        <li class="list-item"><a href="store.html" class="list-link">Shooter</a></li>
-        <li class="list-item"><a href="store.html" class="list-link">Strategy</a></li>
-        <li class="list-item"><a href="store.html" class="list-link">Adventure</a></li>
+        <li class="list-item"><div data-filter-type="action" class="list-link">Action</div></li>
+        <li class="list-item"><div data-filter-type="shooter" class="list-link">Shooter</div></li>
+        <li class="list-item"><div data-filter-type="strategy" class="list-link">Strategy</div></li>
+        <li class="list-item"><div data-filter-type="adventure" class="list-link">Adventure</div></li>
       </ul>
-      <div class="game_list">
-        {{#each storeGame}}
-        <div class="game-item">
-          <img src="{{img}}" alt="demo" />
-          <div class="layer">
-            <h3>{{title}}</h3>
-            <p class="text">{{text}}</p>
-            <div class="block">
-              <p class="realize_date">Release: {{date}}</p>
-              <div class="sale">
-                <p>{{money}} UAH</p>
-                <a class="btn-sale" href="store.html">Buy</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {{/each}}
-      </div>
+      <div class="game_list"></div>
     </div>
   </div>
 </section>

@@ -72,6 +72,20 @@
         width: 40px;
         border-radius: 50%;
       }
+
+      .shop-cart {
+        font-size: 25px;
+        margin-left: 35px;
+        
+        i {
+          cursor: pointer;
+          color: #fff;
+  
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
     }
   }
 }
