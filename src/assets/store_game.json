@@ -5,6 +5,7 @@
         "title": "God of War: Ragnarok",
         "text": "God of War Ragnarök is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment. It was released worldwide...",
         "date": "10.12.2022",
+        "type": "adventure",
         "money": 2500
     },
     {
@@ -13,6 +14,7 @@
         "title": "The Evil Within 2",
         "text": "The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system,new story content, and lots more, is scheduled to arrive ...",
         "date": "5.10.2023",
+        "type": "strategy",
         "money": 1500
     },
     {
@@ -21,6 +23,7 @@
         "title": "It Takes Two",
         "text": "The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system,new story content, and lots more, is scheduled to arrive ...",
         "date": "11.8.2021",
+        "type": "adventure",
         "money": 700
     },
     {
@@ -29,6 +32,7 @@
         "title": "Spider Man 2",
         "text": "The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system,new story content, and lots more, is scheduled to arrive ...",
         "date": "9.2.2023",
+        "type": "action",
         "money": 1000
     },
     {
@@ -37,6 +41,7 @@
         "title": "The Last Of Us part 2",
         "text": "The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system,new story content, and lots more, is scheduled to arrive ...",
         "date": "21.8.2022",
+        "type": "shooter",
         "money": 1200
     },
     {
@@ -45,6 +50,7 @@
         "title": "Days Gone",
         "text": "The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system,new story content, and lots more, is scheduled to arrive ...",
         "date": "13.5.2020",
+        "type": "strategy",
         "money": 600
     }
 ]
