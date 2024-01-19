@@ -33,8 +33,7 @@ const prepareGameButtons = () => {
 
       const { gameId } = this.dataset;
 
-      window.dispatchEvent(new Event(`add-to-shopping-cart`, { gameId }));
-      console.log(gameId)
+      window.dispatchEvent(new CustomEvent(`add-to-shopping-cart`, { detail: { gameId } }));
     });
   })
 }

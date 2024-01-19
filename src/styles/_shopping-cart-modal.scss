@@ -8,6 +8,19 @@
     left: 0;
     display: none;
     z-index: 0;
+
+    &.show-modal {
+      display: block;
+
+      .shopping-cart-modal {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: initial;
+        z-index: 9999;
+        display: block;
+        transform: scale(1);
+      }
+    }
   }
   .shopping-cart-modal {
     opacity: 0;
@@ -24,16 +37,7 @@
     display: flex;
     align-items: flex-end;
   }
-  .show-modal {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
-    z-index: 9999;
-    display: block;
-  }
-  .show-modal {
-    transform: scale(1);
-  }
+
   .cart-header {
     display: flex;
     align-items: center;

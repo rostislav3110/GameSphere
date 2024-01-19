@@ -1,4 +1,5 @@
 import modalTpl from "../partials/components/shopping-cart-modal.hbs";
+import games from "../assets/store_game.json";
 
 const prepareModalButtons = () => {
   const buttons = document.querySelectorAll('[data-modal-name]');
@@ -8,6 +9,16 @@ const prepareModalButtons = () => {
       const { action, modalName } = this.dataset;
 
       window.dispatchEvent(new Event(`${action}-${modalName}`));
+    });
+  });
+
+  const cartActions = document.querySelectorAll('.shopping-cart-modal-wrapper [data-action]');
+  
+  cartActions.forEach(button => {
+    button.addEventListener("click", function() {
+      const { action } = this.dataset;
+
+      window.dispatchEvent(new CustomEvent(action, { detail: this.dataset}));
     });
   });
 }
@@ -21,32 +32,30 @@ const prepareModal = () => {
     document.body.appendChild(modalWrapper)
   }
 
-  modalWrapper.innerHTML = modalTpl();
+  const items = getCurrentCartItems()
+
+  modalWrapper.innerHTML = modalTpl({ items });
+  prepareModalButtons();
 };
 
 const showModal = () => {
   const wrapper = document.getElementsByClassName('shopping-cart-modal-wrapper')?.[0];
-  const modal = document.getElementsByClassName('shopping-cart-modal')?.[0];
 
-  if (!modal || !wrapper) return;
+  if (!wrapper) return;
 
-  modal.classList.add('show-modal');
-  wrapper.style.display = 'block';
+  wrapper.classList.add('show-modal');
 }
 
 const hideModal = () => {
   const wrapper = document.getElementsByClassName('shopping-cart-modal-wrapper')?.[0];
-  const modal = document.getElementsByClassName('shopping-cart-modal')?.[0];
 
-  if (!modal || !wrapper) return;
+  if (!wrapper) return;
 
-  modal.classList.remove('show-modal');
-  wrapper.style.display = 'none';
+  wrapper.classList.remove('show-modal');
 }
 
 window.addEventListener('hashchange', function () {
   prepareModal()
-  prepareModalButtons()
 });
 
 window.addEventListener('show-shopping-cart-modal', function () {
@@ -55,4 +64,69 @@ window.addEventListener('show-shopping-cart-modal', function () {
 
 window.addEventListener('hide-shopping-cart-modal', function () {
   hideModal()
+});
+
+const getGameById = (id) => {
+  return games.find(it => it.id == id);
+}
+
+const addGameToCart = (game) => {
+  const items = getCurrentCartItems()
+  const exist = items.some(it => it.id == game.id);
+
+  if (exist) return;
+
+  items.push(game);
+  localStorage.setItem("cart-items", JSON.stringify(items));
+}
+
+const removeGameFromCart = (game) => {
+  const items = getCurrentCartItems().filter(it => it.id != game.id);
+  localStorage.setItem("cart-items", JSON.stringify(items));
+}
+
+const clearShoppingCart = (game) => {
+  localStorage.setItem("cart-items", JSON.stringify([]));
+}
+
+const getCurrentCartItems = () => {
+  const items = localStorage.getItem("cart-items");
+
+  if (!items) return [];
+
+  return JSON.parse(items);
+}
+
+window.addEventListener('add-to-shopping-cart', function (e) {
+  const { gameId } = e.detail;
+  const game = getGameById(gameId);
+
+  addGameToCart(game);
+  prepareModal()
+});
+
+window.addEventListener('remove-from-shopping-cart', function(e) {
+  const { gameId } = e.detail;
+  const game = getGameById(gameId);
+
+  removeGameFromCart(game);
+  prepareModal()
+});
+
+window.addEventListener('clear-shopping-cart', function(e) {
+  clearShoppingCart();
+  hideModal()
+  prepareModal()
+});
+
+window.addEventListener('complete-order', function(e) {
+  const items = getCurrentCartItems();
+
+  if (!items.length) return;
+
+  alert('Your order completed!')
+
+  clearShoppingCart();
+  hideModal()
+  prepareModal()
 });

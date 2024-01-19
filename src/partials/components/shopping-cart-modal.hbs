@@ -19,20 +19,22 @@
       <div class="table-responsive">
         <table>
           <tbody class="cartTable">
-            {{!-- <tr class="goodList">
-              <td class="value">Grand the auto V</td>
-              <td class="sum">1250 UAH</td>
-              <td class="remove">
-                <button class="removeIcon" type="button">Del</button>
-              </td>
-            </tr> --}}
+            {{#each items}}
+              <tr class="goodList">
+                <td class="value">{{title}}</td>
+                <td class="sum">{{money}} UAH</td>
+                <td class="remove">
+                  <button class="removeIcon" type="button" data-type="action" data-action="remove-from-shopping-cart" data-game-id="{{id}}">Del</button>
+                </td>
+              </tr>
+              {{/each}}
           </tbody>
         </table>
       </div>
     </div>
   </div>
   <div class="footerBtnCart">
-    <button class="makeOrder" type="button">Order</button>
-    <h4 class="clearCart">Clear the basket</h4>
+    <button class="makeOrder" type="button" data-type="action" data-action="complete-order">Order</button>
+    <h4 class="clearCart" data-type="action" data-action="clear-shopping-cart">Clear the basket</h4>
   </div>
 </div>
